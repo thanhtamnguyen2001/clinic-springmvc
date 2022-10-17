@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+        <definition name="baseLayout"
+                    template="/WEB-INF/layout/base.jsp">
+                <put-attribute name="title" value="" />
+                <put-attribute name="logo" value="/WEB-INF/layout/logo.jsp" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content" value="" />
+                <put-attribute name="footer"
+                               value="/WEB-INF/layout/footer.jsp" />
+        </definition>
+        <definition name="index" extends="baseLayout">
+                <put-attribute name="title" value="Trang chủ" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/index.jsp" />
+        </definition>
+        <definition name="medical-registry" extends="baseLayout">
+                <put-attribute name="title" value="Dịch vụ" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/medical-registry.jsp" />
+        </definition>
+        <definition name="medical-registry" extends="baseLayout">
+                <put-attribute name="title" value="Medical registry" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/medical-registry.jsp" />
+        </definition>
+        <!-- ==============begin nurse view===============-->
+        <definition name="nurse" extends="baseLayout">
+                <put-attribute name="title" value="Nurse " />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/nurse/nurse.jsp" />
+        </definition>
+        <definition name="registration-list" extends="baseLayout">
+                <put-attribute name="title" value="Nurse page" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/nurse/registration-list.jsp" />
+        </definition>
+        <!-- ==============end nurse view===============-->
+         
+        <!-- ==============begin doctor view===============-->
+        <definition name="doctor" extends="baseLayout">
+                <put-attribute name="title" value="Doctor page " />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/doctor/doctor.jsp" />
+        </definition>
+        <definition name="certificate" extends="baseLayout">
+                <put-attribute name="title" value="Create Prescription " />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/doctor/certificate.jsp" />
+        </definition>
+         
+        <!-- ==============end doctor view===============-->
+        
+        <!-- ==============start admin view===============-->
+        <definition name="medicines" extends="baseLayout">
+                <put-attribute name="title" value="Quản lý thuốc" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/medicine-management.jsp" />
+        </definition>
+        <definition name="medicine-detail" extends="baseLayout">
+                <put-attribute name="title" value="Sửa thuốc" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/medicine-update.jsp" />
+        </definition>
+        <definition name="units" extends="baseLayout">
+                <put-attribute name="title" value="Quản lý đơn vị" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/unit-management.jsp" />
+        </definition>
+        <definition name="unit-detail" extends="baseLayout">
+                <put-attribute name="title" value="Sửa đơn vị" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/unit-update.jsp" />
+        </definition>
+        <definition name="prescriptions" extends="baseLayout">
+                <put-attribute name="title" value="Quản lý toa thuốc" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/prescription-management.jsp" />
+        </definition>
+        <definition name="prescription-edit" extends="baseLayout">
+                <put-attribute name="title" value="Sửa toa thuốc" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/prescription-update.jsp" />
+        </definition>
+        <definition name="prescription-detail" extends="baseLayout">
+                <put-attribute name="title" value="Sửa đơn thuốc" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/prescription-detail.jsp" />
+        </definition>
+        <definition name="prescription-detail-edit" extends="baseLayout">
+                <put-attribute name="title" value="Sửa đơn thuốc" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/prescription-detail-update.jsp" />
+        </definition>
+        <definition name="regulations" extends="baseLayout">
+                <put-attribute name="title" value="Quản lý quy tắc" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/regulation-management.jsp" />
+        </definition>
+        <definition name="regulation-detail" extends="baseLayout">
+                <put-attribute name="title" value="Sửa quy tắc" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/regulation-update.jsp" />
+        </definition>
+        <definition name="diseases" extends="baseLayout">
+                <put-attribute name="title" value="Quản lý bệnh" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/disease-management.jsp" />
+        </definition>
+        <definition name="disease-detail" extends="baseLayout">
+                <put-attribute name="title" value="Sửa bệnh" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/disease-update.jsp" />
+        </definition>
+        <definition name="medical-certificates" extends="baseLayout">
+                <put-attribute name="title" value="Quản lý phiếu khám" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/medical-certificate-management.jsp" />
+        </definition>
+        <definition name="medical-certificate-detail" extends="baseLayout">
+                <put-attribute name="title" value="Sửa phiếu khám" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/medical-certificate-update.jsp" />
+        </definition>
+        <definition name="users" extends="baseLayout">
+                <put-attribute name="title" value="Quản lý người dùng" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/user-management.jsp" />
+        </definition>
+        <definition name="user-detail" extends="baseLayout">
+                <put-attribute name="title" value="Quản lý người dùng" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/user-update.jsp" />
+        </definition>
+        <definition name="stats" extends="baseLayout">
+                <put-attribute name="title" value="Thống kê" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/stats.jsp" />
+        </definition>
+        <definition name="register-stats" extends="baseLayout">
+                <put-attribute name="title" value="Thống kê bệnh nhân khám" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/admin/register-stats.jsp" />
+        </definition>
+        
+        <!-- ===============end admin view================-->
+        
+
+        <!-- ==============begin login view===============-->
+        <definition name="login" extends="baseLayout">
+                <put-attribute name="title" value="Dang nhap " />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/login.jsp" />
+        </definition>
+        <!-- ==============end login view===============-->
+        <definition name="register" extends="baseLayout">
+                <put-attribute name="title" value="register " />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/register.jsp" />
+        </definition>
+        
+        <!-- ==============medical-history===============-->
+        <definition name="medical-history" extends="baseLayout">
+                <put-attribute name="title" value="medical-history " />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/medical-history.jsp" />
+        </definition>
+        
+        <!-- ==============start supper admin view===============-->
+        <definition name="super-admin" extends="baseLayout">
+                <put-attribute name="title" value="Super admin page" />
+                <put-attribute name="header"
+                               value="/WEB-INF/layout/header.jsp" />
+                <put-attribute name="content"
+                               value="/WEB-INF/jsp/super-admin/home.jsp" />
+        </definition>
+        
+        
+        <!-- ==============end supper admin view===============-->
+</tiles-definitions>
